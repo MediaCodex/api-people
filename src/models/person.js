@@ -69,7 +69,7 @@ const model = dynamoose.model(modelName, schema, modelOptions)
  * @param {string} slug
  * @param {string} [id]
  */
-model.methods.set('slugExists', async function (slug, id = undefined) {
+model.methods.set('slugExists', async function (slug, id = null) {
   const query = this.query('slug').eq(slug)
 
   if (id) {
