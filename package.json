@@ -1,0 +1,44 @@
+{
+  "name": "@mediacodex/api-people",
+  "version": "1.0.0",
+  "description": "API Microservice for people",
+  "scripts": {
+    "test": "jest --coverage",
+    "build": "webpack && npm run build:zip",
+    "build:zip": "cd build && for i in *.js; do zip $i.zip $i; done"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/mediacodex/backend/people.git"
+  },
+  "author": "DeltaByte (https://gitlab.com/DeltaByte)",
+  "license": "MPL-2.0",
+  "bugs": {
+    "url": "https://gitlab.com/mediacodex/backend/people/issues"
+  },
+  "homepage": "https://gitlab.com/mediacodex/backend/people#readme",
+  "devDependencies": {
+    "eslint": "^6.8.0",
+    "eslint-config-standard": "^14.1.1",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-node": "^10.0.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1",
+    "jest": "^25.5.4",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.12"
+  },
+  "dependencies": {
+    "@hapi/joi": "^17.1.1",
+    "axios": "^0.19.2",
+    "dynamoose": "^2.2.1",
+    "esm": "^3.2.25",
+    "koa": "^2.13.0",
+    "koa-bodyparser": "^4.3.0",
+    "koa-json-error": "^3.1.2",
+    "nanoid": "^3.1.10",
+    "nanoid-dictionary": "^3.0.0",
+    "ramda": "^0.27.0",
+    "serverless-http": "^2.5.0"
+  }
+}
