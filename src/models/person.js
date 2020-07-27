@@ -72,7 +72,7 @@ const model = dynamoose.model(modelName, schema, modelOptions)
 model.methods.set('slugExists', async function (slug, id = null) {
   const query = this.query('slug').eq(slug)
 
-  if (id) {
+  if (id !== null) {
     query.and().where('id').not().eq(id)
   }
 
