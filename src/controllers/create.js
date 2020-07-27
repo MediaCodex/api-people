@@ -23,7 +23,8 @@ app.use(auth)
 const requestSchema = Joi.object({
   name: Joi.string().min(3).max(255).required().trim(),
   slug: Joi.string().min(3).max(501).regex(/^[a-zA-Z0-9-]+$/).required(), // 512 chars, accounting for ID
-  founded: Joi.string().isoDate()
+  born: Joi.string().isoDate(),
+  died: Joi.string().isoDate() // TODO: validate older than born
 }).required()
 app.use(validateBody(requestSchema))
 
