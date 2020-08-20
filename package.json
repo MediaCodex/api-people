@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://gitlab.com/mediacodex/backend/people.git"
+    "url": "git+https://github.com/mediacodex/service-people.git"
   },
-  "author": "DeltaByte (https://gitlab.com/DeltaByte)",
+  "author": "DeltaByte (https://github.com/DeltaByte)",
   "license": "MPL-2.0",
   "bugs": {
-    "url": "https://gitlab.com/mediacodex/backend/people/issues"
+    "url": "https://github.com/mediacodex/service-people/issues"
   },
-  "homepage": "https://gitlab.com/mediacodex/backend/people#readme",
+  "homepage": "https://github.com/mediacodex/service-people#readme",
   "devDependencies": {
     "eslint": "^6.8.0",
     "eslint-config-standard": "^14.1.1",
